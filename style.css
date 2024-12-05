@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Add flex to body to get full screen */
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(96, 12, 232);
+    padding: 35px;
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    height: 50%;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #5155cf;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #0998f1;
+    padding: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #f30c04;
+    padding: 100px;
+    text-align: center;
+    color: #000;
+    height: 100%;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  iframe{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 1000000px;
+}
