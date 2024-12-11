@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Generator</title>
+    <style>
+                header{
+            background-color: #f0f8ff;  
+        
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #2a0345;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section{
+            background-color: #ffffff;
+            
+        }
+        header, section, footer {
+            padding: 20px;
+        }
+        footer {
+            background-color: #030446;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;              /* Dark text color */
+            font-size: 20px;
+            transition: background-color 0.5s ease; /* Smooth transition */
+        }
+        h1 {
+            color: #007acc;           /* Blue heading */
+        }
+ 
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="project1.html">#1 - Lost & Found</a>
+    <a href="project2.html">#2 - Face Generator</a>
+    <a href="project3.html">#3 - Experimental Clock</a>
+    <a href="project4.html">#4 - Exquisite Corpse</a>
+    <a href="project5.html">#5 - Optical Illusion</a>
+    <a href="project6.html">#6 - Data Portrait</a>
+    <a href="project7.html">#7 - Autobiographical Game</a>
+    <a href="about.html">About Me</a>
+</nav>
+
+<h1>#2 - Face Generator</h1>
+<h2>description:</h2>
+<p>I wanted the face to change size everytime I click, like the Chinese "Bianlian", where the person flashes the face, or has a white mask over the face, and the face changes to another color after the click. 
+    The one on the side is the test sketch that I did </p>
+
+<!-- Embed your p5.js sketch -->
+<div style="text-align: center;">
+<iframe src="https://editor.p5js.org/yanl657/full/UnDOcLH_1"width="400" height="400"></iframe>
+<iframe src="https://editor.p5js.org/yanl657/full/OS0vGLW2X"width="400" height="400"></iframe>
+</div>
+<script>
+    function getRandomColor() {
+        const r = Math.floor(Math.random() * 256); 
+        const g = Math.floor(Math.random() * 256); 
+        const b = Math.floor(Math.random() * 256); 
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    function changeBackground() {
+        document.body.style.backgroundColor = getRandomColor();
+    }
+
+    setInterval(changeBackground, 1000); // Change color every 1 second
+</script>
+<footer>Welcome</footer>
+</body>
+</html>
